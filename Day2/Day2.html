@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2 Task</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    body {
+      color: #1f3a5f;
+    }
+
+    .navbar {
+      background-color: #e5e7eb;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .navbar ul {
+      display: flex;
+      gap: 40px;
+    }
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      color: #1f3a5f;
+    }
+    a:hover {
+      color: #3b82f6;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .form {
+      margin: 35px auto;
+      width: 30%;
+      border: 2px solid #e5e7eb;
+      padding: 20px;
+    }
+    .form input {
+      border: 1px solid #1f3a5f;
+      padding: 5px;
+    }
+    .pi {
+      width: 250px;
+    }
+
+    form fieldset {
+      padding: 20px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .btn {
+      height: 30px;
+      width: 150px;
+      margin-left: 120px;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Student Survey Form</h1>
+    <div class="form">
+      <form action="#">
+        <fieldset>
+          <legend><h4>Personal Information</h4></legend>
+          <label for="name"><h5>Name:</h5></label>
+          <input
+            class="pi"
+            type="text"
+            placeholder="Enter Your Name"
+            id="name"
+          /><br />
+          <br />
+          <label for="email"><h5>Email</h5></label>
+          <input
+            class="pi"
+            type="email"
+            id="email"
+            placeholder="Enter Your Email"
+          /><br />
+          <br />
+          <label for="dob"><h5>Date Of Birth</h5></label>
+          <input type="date" /><br />
+          <br />
+          <label for="contact"><h5>Phone Number</h5></label>
+          <input class="pi" type="tel" placeholder="Enter Your Phone Number" />
+          <br />
+          <br />
+          <h4>Gender</h4>
+          <input type="radio" id="m" />
+          <label for="m">Male</label>
+          <input type="radio" id="f" />
+          <label for="f">Female</label>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend><h4>Professional Information</h4></legend>
+          <h5>Your Carrer Preference</h5>
+          <br />
+          <select name="carrer" id="carrer">
+            <option value="carrer">Mern stack developer</option>
+            <option value="carrer">Python developer</option>
+            <option value="carrer">Data Scientist</option>
+            <option value="carrer">Cyber Security Specialist</option>
+          </select>
+          <br /><br />
+          <h5>Languages You know:</h5>
+          <br />
+          <input type="checkbox" id="lang1" />
+          <label for="lang1">C++</label>
+          <input type="checkbox" id="lang2" />
+          <label for="lang2">Java</label>
+          <input type="checkbox" id="lang3" />
+          <label for="lang3">Python</label>
+          <input type="checkbox" id="lang4" />
+          <label for="lang4">PHP</label> <br />
+          <br />
+          <label for="exp"><h5>Your Work Experience:</h5></label> <br />
+          <textarea id="exp" rows="10" cols="45"></textarea>
+        </fieldset>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
