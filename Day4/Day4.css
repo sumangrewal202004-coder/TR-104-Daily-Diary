@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #F7F5F2;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  background-color: #000000;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.Navbar div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 80%;
+  width: 25%;
+}
+.Navbar div a {
+  text-decoration: none;
+  color: #cccccc;
+  cursor: pointer;
+}
+.Navbar div:hover {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.Navbar div:hover a {
+  color: #000000;
+}
+
+.hero {
+  background-image: url(cafe1.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text1 {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.text2 {
+  position: absolute;
+  top: 90%;
+  left: 4%;
+  background-color: #000000;
+  color: #cccccc;
+  padding: 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+.text3 {
+  position: absolute;
+  top: 93%;
+  left: 85%;
+  color: #cccccc;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.about {
+  text-align: center;
+  background-color: #000000;
+  color: #cccccc;
+  padding: 10px;
+  margin: 70px auto;
+  width: 25%;
+}
+#about{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.text4 {
+  padding: 0px 30px;
+  text-align: justify;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 18px;
+}
+
+.text5 {
+  padding: 0px 30px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.text6 {
+  padding: 0px 30px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 18px;
+}
+
+.text-bg {
+  background-color: #f1f1f1;
+  border-left: 4px solid #cccc;
+  margin: 30px;
+  padding: 10px;
+}
+
+.cafe2 {
+  background-image: url(cafe2.jpg);
+  width: 90%;
+  height: 400px;
+  margin: 0px auto;
+  background-size: cover;
+}
+
+.text7 {
+  padding-left: 10%;
+  margin-top: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#menu {
+  height: auto;
+  padding: 30px 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  margin: 0px auto;
+}
+.menu1 {
+  text-align: center;
+  background-color: #000000;
+  color: #cccccc;
+  padding: 10px;
+  margin: 50px auto;
+  width: 20%;
+}
+#menu p {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 40px;
+}
+
+.cafe3 {
+  background-image: url(cafe3.jpg);
+  height: 500px;
+  margin: 30px auto;
+  width: 50%;
+  background-size: cover;
+}
+
+.where1 {
+  text-align: center;
+  background-color: #000000;
+  color: #cccccc;
+  padding: 10px;
+  margin: 50px auto;
+  width: 30%;
+}
+
+.cafe4{
+  background-image: url(cafe4.jpg);
+  height: 500px;
+  margin: 30px auto;
+  width: 100%;
+  background-size: cover;   
+}
+
+.where{
+    width: 50%;
+    margin: 0px auto;
+}
+.FYI{
+    background-color: #000000;
+    color: #cccccc;
+    padding: 3px;
+}
+
+.text8{
+     padding: 30px;
+     font-size: 18px;
+     text-align: justify;
+}
+
+.form{
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.form input{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn{
+    outline: none;
+    background-color: #000000;
+    color: #ccc;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.btn:hover{
+    background-color: #cccc;
+    color:#000000;
+}
+
+.footer{
+   margin: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
