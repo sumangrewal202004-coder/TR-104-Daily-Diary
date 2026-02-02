@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Fitness</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="SCSS/style.scss" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/logo.png" alt="logo" height="90" />
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="menuToggle">☰</div>
+      </nav>
+    </header>
+
+    <section>
+      <h1 class="heading">POWER <span style="color: #e10600">FITNESS</span></h1>
+      <h2 class="tagline">
+        “A modern fitness center offering strength training, cardio, and
+        personal coaching.”
+      </h2>
+    </section>
+    <br /><br />
+    <section>
+      <div class="grid-container">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+        <div class="img6"></div>
+        <div class="img11"></div>
+      </div>
+    </section>
+    <br /><br />
+    <section>
+      <div class="container2">
+        <div class="btn">Join Now</div>
+        <div class="btn">Book A Trial</div>
+      </div>
+    </section>
+    <br /><br />
+    <section>
+      <div class="container3">
+        <div class="one">Why Choose Us?</div>
+        <div class="two">
+          <ul>
+            <li>Certified trainers</li>
+            <li>Modren equipments</li>
+            <li>Affordable plans</li>
+            <li>Clean & safe environment</li>
+            <li>Flexible timings</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+    <section>
+      <div class="container4">
+        <div class="card">
+          Strength Training
+          <div class="img7"></div>
+          <a class="btn" href="services.html" style="text-decoration: none"
+            >Learn More</a
+          >
+        </div>
+        <div class="card">
+          Cardio & Weight Loss
+          <div class="img8"></div>
+          <a class="btn" href="services.html" style="text-decoration: none"
+            >Learn More</a
+          >
+        </div>
+        <div class="card">
+          Yoga & Zumba
+          <div class="img9"></div>
+          <a class="btn" href="services.html" style="text-decoration: none"
+            >Learn More</a
+          >
+        </div>
+        <!-- <div class="card">
+          Personal Training
+          <div class="img10"></div>
+          <a class="btn" href="services.html" style="text-decoration: none"
+            >Learn More</a
+          >
+        </div> -->
+      </div>
+    </section>
+    <br /><br />
+    <section>
+      <div class="container5">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <p>
+              “I lost 6 kg in 3 months with proper guidance and regular
+              workouts. The trainers helped me stay motivated throughout the
+              journey.” <br />
+              <br />
+              <span style="color: #e10600">— Rahul Sharma</span>
+            </p>
+          </div>
+          <div class="item">
+            <p>
+              “The trainers guided me step by step and corrected my workout
+              form. I feel more confident and energetic now.” <br />
+              <br />
+              <span style="color: #e10600">— Neha Verma</span>
+            </p>
+          </div>
+          <div class="item">
+            <p>
+              “Good quality equipment and supportive trainers made my fitness
+              routine consistent. I have seen visible improvements in my
+              strength.”<br />
+              <br />
+              <span style="color: #e10600">— Amit Singh</span>
+            </p>
+          </div>
+          <div class="item">
+            <p>
+              “The clean environment and flexible timings made it easy to follow
+              a daily workout schedule. I feel healthier than before.” <br />
+              <br />
+              <span style="color: #e10600">— Pooja Mehta</span>
+            </p>
+          </div>
+          <div class="item">
+            <p>
+              “Affordable membership plans and personal attention from trainers
+              helped me achieve my fitness goals comfortably.”<br />
+              <br />
+              <span style="color: #e10600">— Rohit Kumar</span>
+            </p>
+          </div>
+          <div class="item">
+            <p>
+              “The trainers focus on safety and correct techniques, which helped
+              me avoid injuries and improve my overall fitness.” <br />
+              <br />
+              <span style="color: #e10600">— Sona Sharma</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+    <footer>
+      <div class="container6">
+        <div><img src="images/logo.png" alt="logo" height="90px" /></div>
+        <div>
+          <p>Made with &#10084; by Suman Grewal</p>
+          <p>All Rights reserved &copy 2026</p>
+        </div>
+      </div>
+    </footer>
+    <script src="JS/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        items: 2,
+        loop: true,
+        margin: 25,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [1000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+    </script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

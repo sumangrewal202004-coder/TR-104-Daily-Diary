@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #e10600;
+  --secondary: #111111;
+  --accent: #ffc107;
+  --bg: #0b0b0b;
+  --text: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+header nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: var(--accent);
+}
+
+.menuToggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.heading {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  padding: 15px;
+}
+
+.tagline {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  max-width: 1170px;
+  margin: 20px auto;
+  border: 4px solid var(--text);
+}
+
+.grid-container > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+}
+
+.img1 {
+  background-image: url(../images/gym_img_1.jpg);
+  grid-column: span 1;
+}
+.img2 {
+  background-image: url(../images/gym_img_2.jpg);
+  grid-column: span 2;
+}
+.img3 {
+  background-image: url(../images/gym_img_3.jpg);
+  grid-column: span 2;
+}
+.img4 {
+  background-image: url(../images/gym_img_4.webp);
+  grid-column: span 1;
+}
+.img5 {
+  background-image: url(../images/gym_img_5.jpg);
+  grid-column: span 1;
+}
+.img6 {
+  background-image: url(../images/gym_img_6.jpg);
+  grid-column: span 1;
+}
+.img11 {
+  background-image: url(../images/gym_img_11.jpg);
+  grid-column: span 1;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 20px 0;
+}
+
+.btn {
+  height: 60px;
+  width: 200px;
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: var(--text);
+  color: var(--secondary);
+}
+
+.container3 .one {
+  font-size: 60px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.container3 .two {
+  padding: 20px;
+  font-size: 30px;
+  border-left: 10px solid var(--primary);
+}
+
+.container3 .two ul {
+  margin-left: 50px;
+  list-style-type: disc;
+}
+
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.container4 .card {
+  background-color: var(--text);
+  color: var(--secondary);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container4 .card > div {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.img7 {
+  background-image: url(../images/gym_img_7.jpg);
+}
+.img8 {
+  background-image: url(../images/gym_img_8.jpg);
+}
+.img9 {
+  background-image: url(../images/gym_img_9.jpg);
+}
+.img10 {
+  background-image: url(../images/gym_img_10.jpg);
+}
+
+.container5 {
+  max-width: 1170px;
+  margin: 20px auto;
+}
+
+.container5 .item {
+  background-color: var(--text);
+  color: var(--secondary);
+  height: 300px;
+  border: 3px solid var(--primary);
+  border-radius: 10px;
+  padding: 50px;
+  font-size: 30px;
+  font-weight: 500;
+  font-style: oblique;
+  text-align: justify;
+}
+
+footer .container6 {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Services Page Specific */
+.container7 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1400px;
+  margin: 40px auto;
+  border: 2px solid var(--accent);
+  background-color: var(--text);
+  color: var(--secondary);
+}
+
+.container7 .card2 {
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container7 .img12,
+.container7 .img13,
+.container7 .img14,
+.container7 .img15 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+}
+
+.img12 {
+  background-image: url(../images/gym_img_7.jpg);
+}
+.img13 {
+  background-image: url(../images/gym_img_8.jpg);
+}
+.img14 {
+  background-image: url(../images/gym_img_9.jpg);
+}
+.img15 {
+  background-image: url(../images/gym_img_10.jpg);
+}
+
+/* About Page Specific */
+.about {
+  max-width: 1190px;
+  margin: 20px auto;
+  border: 1px solid var(--text);
+  font-size: 25px;
+  text-align: justify;
+  padding: 30px;
+  background-color: var(--bg);
+  color: var(--accent);
+}
+
+/* Contact Page Specific */
+.form {
+  background-color: var(--text);
+  color: var(--secondary);
+  max-width: 450px;
+  margin: 40px auto;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary);
+  display: block;
+  margin: 20px 0 10px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--bg);
+  border-radius: 10px;
+}
+
+.form textarea {
+  height: 150px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.submit {
+  height: 40px;
+  width: 130px;
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 18px;
+  margin: 20px auto 0;
+  transition: background-color 0.3s;
+}
+
+.submit:hover {
+  background-color: var(--accent);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img2,
+  .img3 {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  header nav ul.active {
+    display: flex;
+  }
+
+  .menuToggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img11 {
+    grid-column: span 1;
+    min-height: 200px;
+  }
+
+  .container2 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .container3 {
+    grid-template-columns: 1fr;
+  }
+
+  .container3 .one {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .container3 .two {
+    font-size: 24px;
+    border-left: none;
+    border-top: 10px solid var(--primary);
+  }
+
+  .container3 .two ul {
+    margin-left: 20px;
+  }
+
+  .container4 {
+    padding: 20px;
+  }
+
+  .container5 .item {
+    font-size: 24px;
+    padding: 30px;
+    height: auto;
+  }
+
+  .container7 {
+    grid-template-columns: 1fr;
+  }
+
+  .container7 .card2 {
+    font-size: 20px;
+  }
+
+  .container7 .btn {
+    margin: 20px auto 0 !important;
+  }
+
+  .about {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .form {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  footer .container6 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 30px;
+  }
+
+  .container3 .one {
+    font-size: 30px;
+  }
+
+  .container3 .two {
+    font-size: 20px;
+  }
+
+  .container4 .card {
+    font-size: 24px;
+  }
+
+  .container5 .item {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .about {
+    font-size: 18px;
+  }
+}

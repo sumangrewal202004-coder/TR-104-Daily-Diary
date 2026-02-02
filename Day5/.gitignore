@@ -1,0 +1,14 @@
+# Node / tooling (if any)
+node_modules/
+
+# Sass cache
+.sass-cache/
+.css.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
